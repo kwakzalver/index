@@ -1,0 +1,13 @@
+:root {
+	--red: #d77;
+	--yellow: #da7;
+	--green: #ab7;
+	--cyan: #7cd;
+	--blue: #7ad;
+	--magenta: #a7d;
+	--foreground: #bbd;
+	--background: #223;
+	--background-primary: #223;
+	--background-secondary: #334;
+	--background-tertiary: #445;
+}
