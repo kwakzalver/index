@@ -6,3 +6,13 @@ function showPage(id) {
   const element = document.getElementById(id);
   element.style.display = 'block';
 }
+
+function plus(id) {
+  let d = document.createElement('div');
+  d.className = 'tier-content';
+  d.contentEditable = true;
+  // add d before or after id?
+  const e = document.getElementById(id);
+  e.parentElement.appendChild(d);
+  d.focus();
+}
