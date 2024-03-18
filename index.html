@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Index page</title>
+		<link id="theme" rel="stylesheet" href="./light.css">
+		<link rel="stylesheet" href="./defaults.css">
+	</head>
+
+	<body id="top">
+
+		<div class="center buttons">
+			<button onclick="showPage('page-1');">Page 1</button>
+			<button onclick="showPage('page-2');">Page 2</button>
+			<button onclick="showPage('page-3');">Page 3</button>
+			<button onclick="Theme.toggle();">Toggle Theme</button>
+		</div>
+
+		<hr>
+
+		<div class="page" id="page-1">
+			<h1 id="title"><a href="#title">Title</a></h1>
+			<p>
+			Nothing special going on in here.
+			Paragraphs are separated by empty space.
+			</p>
+			<p>Here is an unordered list.</p>
+			<ul>
+				<li>List item 1</li>
+				<li>List item 2</li>
+				<li>List item 3</li>
+			</ul>
+			<p>Here is an ordered list.</p>
+			<ol>
+				<li>List item 1</li>
+				<li>List item 2</li>
+				<li>List item 3</li>
+			</ol>
+			<h2 id="subtitle"><a href="#subtitle">Subtitle</a></h2>
+			<p>We can link to specific headlines.</p>
+			<h3 id="subsubtitle"><a href="#subsubtitle">Sub-subtitle</a></h3>
+			<p>Here is a table.</p>
+			<table>
+				<tr>
+					<th>1st column</th>
+					<th>2nd column</th>
+					<th>3rd column</th>
+				</tr>
+				<tr>
+					<td>a</td>
+					<td>b</td>
+					<td>c</td>
+				</tr>
+				<tr>
+					<td>d</td>
+					<td>e</td>
+					<td>f</td>
+				</tr>
+				<tr>
+					<td>g</td>
+					<td>h</td>
+					<td>i</td>
+				</tr>
+			</table>
+			<p>Here is a URL.</p>
+			<a href="./">Back to where you started</a>
+		</div>
+
+		<div class="page" id="page-2">
+			<h1 id="forms"><a href="#forms">Forms</a></h1>
+			<p>Suppose we have some form.</p>
+			<div class="center">
+				<form action="./" method="post" enctype="multipart/form-data">
+					<input type="file" multiple></input>
+					<textarea id="textarea" placeholder="Some placeholder text here"/></textarea>
+					<button disabled id="apple">Submit</button>
+				</form>
+			</div>
+			<p>
+			The submit button is disabled because we do not actually support POST
+			requests.
+			</p>
+
+			<h2 id="buttons"><a href="#buttons">Buttons</a></h2>
+			<p>Some more buttons, to trigger javascript</p>
+			<div class="center">
+				<button id="banana" onclick="alert('yay!');">Click me!</button>
+				<button id="cherry" onclick="alert('winner!');">Click me too!</button>
+			</div>
+
+			<h2 id="silly-stuff"><a href="#silly-stuff">Silly stuff</a></h2>
+			<p>An inspirational quote.</p>
+			<blockquote>"Scooby Doo, where are you?!" &mdash; Shaggy</blockquote>
+			<p>Secret clickables.</p>
+			<details>
+				<summary>Apples</summary>
+				An apple a day keeps the doctor away.
+			</details>
+			<details>
+				<summary>Bananas</summary>
+				Bananas are delicious, and nutritious.
+			</details>
+		</div>
+
+		<div class="page" id="page-3">
+			<div class="tier">
+				<h1 contentEditable>Tier S</h3>
+				<button id='S' onclick="plus('S');">(+)</button>
+			</div>
+			<div class="tier">
+				<h1 contentEditable>Tier A</h3>
+				<button id='A' onclick="plus('A');">(+)</button>
+			</div>
+			<div class="tier">
+				<h1 contentEditable>Tier B</h3>
+				<button id='B' onclick="plus('B');">(+)</button>
+			</div>
+			<div class="tier">
+				<h1 contentEditable>Tier C</h3>
+				<button id='C' onclick="plus('C');">(+)</button>
+			</div>
+			<div class="tier">
+				<h1 contentEditable>Tier D</h3>
+				<button id='D' onclick="plus('D');">(+)</button>
+			</div>
+			<div class="tier">
+				<h1 contentEditable>Tier E</h3>
+				<button id='E' onclick="plus('E');">(+)</button>
+			</div>
+			<div class="tier">
+				<h1 contentEditable>Tier F</h3>
+				<button id='F' onclick="plus('F');">(+)</button>
+			</div>
+		</div>
+
+		<hr>
+
+		<div class="bottom-right">
+			<h3 class="activate">Activate Linux</h3>
+			<p class="activate">Go to Settings to activate Linux</p>
+		</div>
+
+		<footer id="bot">
+			<p>Theme made by 🦆</p>
+		</footer>
+
+		<script src="./script.js"></script>
+
+	</body>
+
+</html>

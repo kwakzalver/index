@@ -1,0 +1,301 @@
+body {
+	padding: 30px ;
+	margin: 0 ;
+
+	background: var(--background-primary) ;
+	color: #00f ;
+
+	max-width: 49rem ;
+
+	font-family: monospace ;
+}
+
+h1>a::before, h2>a::before, h3>a::before {
+	content: "# " ;
+}
+
+h1, h1 > a {
+	padding: 0 ;
+	display: block ;
+	font-size: 2.5rem ;
+	font-weight: 500 ;
+	color: var(--special-1) ;
+}
+
+h2, h2 > a {
+	padding: 0 ;
+	display: block ;
+	font-size: 2rem ;
+	font-weight: 500 ;
+	color: var(--special-1) ;
+}
+
+h3, h3 > a {
+	padding: 0 ;
+	display: block ;
+	font-size: 1.5rem ;
+	font-weight: 500 ;
+	color: var(--special-1) ;
+}
+
+p {
+	padding: 0 ;
+	color: var(--foreground) ;
+}
+
+hr {
+	border: none ;
+	border-top: 1px solid var(--foreground) ;
+	border-bottom: 1px solid var(--background-primary) ;
+}
+
+ul {
+	padding: 0 ;
+	list-style-type: none ;
+	color: var(--foreground) ;
+}
+
+ul > li {
+	padding: 1em ;
+	margin: 0.25em 0 0.25em 0 ;
+	display: inline-block ;
+	border-radius: 0.5em ;
+	background: var(--background-secondary) ;
+	border: none ;
+	transition-duration: 0.4s ;
+	transition-timing-function: ease ;
+}
+
+ul > li:hover {
+	color: var(--background-tertiary) ;
+	background-color: var(--foreground) ;
+}
+
+ol {
+	padding: 0 ;
+	color: var(--foreground) ;
+	list-style-position: inside ;
+}
+
+ol > li {
+	/* top right bottom left */
+	padding: 0 0 10px 0 ;
+	margin: 2px 0 2px 0 ;
+}
+
+ol > li:hover {
+	font-weight: 600 ;
+}
+
+a {
+	text-decoration: none ;
+	padding: 0 ;
+	margin: 2px 0 2px 0 ;
+	font-weight: 500 ;
+	display: inline-block ;
+	color: var(--special-3) ;
+	transition-duration: 0.4s ;
+	transition-timing-function: ease ;
+}
+
+a:hover {
+	color: var(--special-2) ;
+}
+
+table {
+	/* top right bottom left */
+	padding: 0 ;
+	color: var(--foreground) ;
+}
+
+th {
+	font-weight: bold ;
+	padding: 1em ;
+	border: 1px var(--foreground) solid ;
+	transition-duration: 0.4s ;
+	transition-timing-function: ease ;
+}
+
+th:hover {
+	color: var(--background-tertiary) ;
+	background-color: var(--foreground) ;
+}
+
+tr {
+	background: var(--background-secondary) ;
+}
+
+tr:nth-child(even) {
+	background: var(--background-tertiary) ;
+}
+
+td {
+	padding: 1em ;
+	border: 1px var(--foreground) solid ;
+	transition-duration: 0.4s ;
+	transition-timing-function: ease ;
+}
+
+td:hover {
+	color: var(--background-tertiary) ;
+	background-color: var(--foreground) ;
+}
+
+::selection {
+	color: var(--foreground) ;
+	background: var(--special-1) ;
+}
+
+/* focus everywhere */
+:focus { }
+
+/* hover everywhere */
+:hover { }
+
+textarea {
+	display: block ;
+	font-size: 100% ;
+	padding: 1em ;
+	margin: 0 ;
+	width: calc(100% - 2em) ;
+}
+
+button {
+	font-size: inherit ;
+	font-family: inherit ;
+	padding: 1em ;
+	margin: 0.5em auto 0.5em auto ;
+	display: inline-block ;
+	border: 0 ;
+	border-radius: 0.5em ;
+	color: var(--special-4) ;
+	background: var(--special-1) ;
+	transition-duration: 0.4s ;
+	transition-timing-function: ease ;
+}
+
+button:hover {
+	background: var(--special-2) ;
+	cursor: pointer ;
+}
+
+button[disabled] {
+	background-color: var(--foreground) ;
+	filter: grayscale(1) brightness(0.5) ;
+}
+
+input[type="file"] {
+	font-size: inherit ;
+	font-family: inherit ;
+	width: calc(100% - 2em) ;
+	padding: 1em ;
+	margin: 0.5em auto 0.5em auto ;
+	display: block ;
+	border: 0 ;
+	border-radius: 0.5em ;
+	color: var(--background-primary) ;
+	background: var(--foreground) ;
+	transition-duration: 0.4s ;
+	transition-timing-function: ease ;
+}
+
+input[type="file"]:hover {
+	background: var(--special-3) ;
+	cursor: pointer ;
+}
+
+blockquote {
+	margin: 0.5em auto 0.5em auto ;
+	width: calc(80%) ;
+	padding: 1em ;
+	border: 0 ;
+	border-radius: 0.5em ;
+	color: var(--foreground) ;
+	background: var(--background-secondary) ;
+}
+
+details {
+	font-size: inherit ;
+	font-family: inherit ;
+	margin: 0.5em auto 0.5em auto ;
+	width: calc(100% - 2em) ;
+	padding: 1em ;
+	border: 0 ;
+	border-radius: 0.5em ;
+	color: var(--foreground) ;
+	background: var(--background-secondary) ;
+}
+
+summary {
+	padding: 0 0 0.25em 0 ;
+	font-size: 120% ;
+	font-family: inherit ;
+	list-style-type: none ;
+	color: var(--special-2) ;
+	transition-duration: 0.4s ;
+	transition-timing-function: ease ;
+}
+
+summary:hover {
+	color: var(--special-3) ;
+}
+
+summary::before {
+	content: "[" ;
+}
+
+summary::after {
+	content: "]" ;
+}
+
+div.center {
+	width: 100% ;
+	padding: 0 ;
+	margin: 0.5em auto 0.5em auto ;
+	display: block ;
+	text-align: center ;
+}
+
+footer {
+	text-align: center ;
+}
+
+div.tier { }
+
+div.tier-content {
+	display: inline-block ;
+	padding: 1em ;
+	margin: 0.25em 0.5em 0.25em 0.5em ;
+	color: var(--foreground) ;
+	background-color: var(--background-tertiary) ;
+	border-radius: 0.5em ;
+}
+
+#page-1 {
+	display: block ;
+}
+
+#page-2 {
+	display: none ;
+}
+
+#page-3 {
+	display: none ;
+}
+
+.bottom-right {
+	position: fixed ;
+	top: 100% ;
+	left: 100% ;
+	transform: translate(-100%, -100%) ;
+	padding-right: 8em ;
+	padding-bottom: 8em ;
+}
+
+.activate {
+	font-family: sans-serif ;
+	white-space: nowrap ;
+	color: var(--foreground) ;
+	margin: 0 ;
+	letter-spacing: -1px ;
+}
